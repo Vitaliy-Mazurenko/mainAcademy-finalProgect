@@ -1,0 +1,4642 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>корзинa покупателя</title>
+<link rel="shortcut icon" href="img/icons/favicon.ico" />
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/animsition.min.css">
+<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css"/>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+	<header>
+		<!-- Header desktop -->
+		<div class="container-menu-desktop">
+			<div class="wrap-menu-desktop">
+				<nav class="limiter-menu-desktop">
+					<div class="left-header">
+						<!-- Logo desktop -->		
+						<div class="logo">
+						<a href="index.html"><img src="img/icons/logo-01.png" alt="IMG-LOGO"></a>
+						</div>
+
+					</div>
+						
+					<div class="center-header">
+						<!-- Menu desktop -->
+						<div class="menu-desktop">
+							<ul class="main-menu">
+								<li>
+									<a href="#">Главная</a>
+								</li>
+
+								<li>
+									<a href="usloviya_dostavki.html">Доставка</a>
+								</li>
+
+								<li>
+									<a href="error.html">Оплата</a>
+								</li>
+
+								<li>
+									<a href="contact-01.html">Контакты</a>
+								</li>
+
+							</ul>
+
+						</div>	
+
+					</div>
+						
+					<div class="right-header">
+					
+					    	<div class="wrap-icon-header flex-w flex-r-m h-full wrap-menu-click p-t-8">
+							
+								
+							<div  id="checkout" class="wrap-cart-header h-full flex-m m-l-10 menu-click">
+								<div  class="icon-header-item trans-04 icon-header-noti" data-notify="2">
+									<img src="img/icons/icon-cart-2.png" alt="CART">
+								</div>
+								<div class="cart-header menu-click-child trans-04">
+								<div id="cart_content"></div>	
+								<button id="clear_cart" class="button">Очистить корзину</button>	
+									<div class="bo-b-1 bocl15">
+										<div class="size-h-2 js-pscroll m-r--15 p-r-15">
+											<!-- cart header item -->
+
+										</div>
+									</div>
+										
+
+									<div class="flex-w flex-sb-m p-t-22 p-b-12">
+
+									</div>
+
+									<div class="flex-w flex-sb-m p-b-31">
+
+									</div>
+									
+									<form class="contact" action="zakaz.php" method="post">
+						<div class="title"></div>
+						<div class="title_sub">
+							Адрес доставки </div>
+						<input type="text" name="name" placeholder="Введите ФИО">
+						<input type="text" name="phone" placeholder="Введите мобильный телефон">
+						<textarea name="address" placeholder="Введите адрес доставки (Почтовый индекс, город, улица, дом, квартира) или напишите “самовывоз” в случае покупки гироскутера в нашем Шоу-Руме "></textarea>
+						<input type="hidden" name="form_charset" value="">
+						<input type="hidden" name="tovar_id" value="370456">
+						<input type="hidden" name="form_id" value="12650">
+						<input type="hidden" name="order_page_referer" value="">
+						<input type="hidden" value="3" name="pay_mode">
+						<button class="button">
+							Оформить заказ
+						</button>
+					</form>
+									
+								</div>
+							</div>
+						</div>
+             
+						<!-- Icon header -->
+
+					</div>
+				</nav>
+			</div>	
+		</div>
+</header>
+		<section class="main sect">
+			<div class="container">
+				<div class="content">
+					<div class="intro">
+						<div class="caption">
+							ЭЛЕКТРОСАМОКАТЫ
+						</div>
+						<div class="desc">
+							<div class="desc2">
+							ПО ОПТОВЫМ
+						    </div>
+						<div class="desc3">ЦЕНАМ В МИНСКЕ!</div>
+						</div>
+					</div>
+					<div class="top">
+						<img src="img/advantages2/arrow.png" alt="">
+						<div class="not">
+							НАШЛИ ДЕШЕВЛЕ — 
+						</div>
+						<div class="note">
+							<span> СНИЗИМ ЦЕНЫ!</span>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div><img src="img/advantages2/arrow1.png" alt=""></div>
+		</section>
+<div class="container">
+				<div class="p-b-46">
+				<div class="flex-w flex-c-m filter-tope-group">
+					<button class="txt-m-104 cl9 hov2 trans-04 p-rl-27 p-b-10 how-active1" data-filter="*">
+						Все товары
+					</button>
+
+					<button class="txt-m-104 cl9 hov2 trans-04 p-rl-27 p-b-10" data-filter=".kugoo">
+						Kugoo
+					</button>
+
+					<button class="txt-m-104 cl9 hov2 trans-04 p-rl-27 p-b-10" data-filter=".ninebot">
+						Ninebot
+					</button>
+
+					<button class="txt-m-104 cl9 hov2 trans-04 p-rl-27 p-b-10" data-filter=".xiaomi">
+						Xiaomi
+					</button>
+
+					<button class="txt-m-104 cl9 hov2 trans-04 p-rl-27 p-b-10" data-filter=".halten">
+						Halten
+					</button>
+					<button class="txt-m-104 cl9 hov2 trans-04 p-rl-27 p-b-10" data-filter=".razor">
+						Razor
+					</button>
+
+					
+				</div>
+			</div>
+	<div class="row isotope-grid">
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item kugoo">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-01.jpg" alt="IMG"> 	
+			<h4 class="item_title">Kugoo S3</h4>
+			<a href="#popup_catalog_more31" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">460</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="1">Добавить в корзину</button>			
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item kugoo">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-02.jpg" alt="IMG">
+			<h4 class="item_title">Kugoo S3 PRO</h4>
+			<a href="#popup_catalog_more59" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">625</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="2">Добавить в корзину</button>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item kugoo">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-03.jpg" alt="IMG">
+			<h4 class="item_title">Kugoo M2</h4>
+			<a href="#popup_catalog_more76" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">680</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="3">Добавить в корзину</button>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item kugoo">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-04.jpg" alt="IMG">
+			<h4 class="item_title">Kugoo Max Speed</h4>
+			<a href="#popup_catalog_more60" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">930</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="4">Добавить в корзину</button>
+			</div>
+		</div>
+<!-- row2 -->
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item ninebot">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-05.jpg" alt="IMG"> 	
+			<h4 class="item_title">Ninebot ES2</h4>
+			<a href="#popup_catalog_more19" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">720</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="5">Добавить в корзину</button>			
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item xiaomi">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-06.jpg" alt="IMG">
+			<h4 class="item_title">Xiaomi Mijia CN</h4>
+			<a href="#popup_catalog_more79" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">799</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="6">Добавить в корзину</button>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item xiaomi">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-06.jpg" alt="IMG">
+			<h4 class="item_title">Xiaomi Mijia EU</h4>
+			<a href="#popup_catalog_more49" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">799</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="7">Добавить в корзину</button>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item xiaomi">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-08.jpg" alt="IMG">
+			<h4 class="item_title">Xiaomi Mijia Pro</h4>
+			<a href="#popup_catalog_more61" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">1290</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="8">Добавить в корзину</button>
+			</div>
+		</div>
+<!-- row3 -->
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item halten">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-09.jpg" alt="IMG"> 	
+			<h4 class="item_title">Halten RS-01</h4>
+			<a href="#popup_catalog_more62" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">1250</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="9">Добавить в корзину</button>			
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item halten">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-10.jpg" alt="IMG">
+			<h4 class="item_title">Halten RS-02</h4>
+			<a href="#popup_catalog_more63" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">1800</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="10">Добавить в корзину</button>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item halten">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-11.jpg" alt="IMG">
+			<h4 class="item_title">Halten RS-03</h4>
+			<a href="#popup_catalog_more64" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">2850</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="11">Добавить в корзину</button>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item kugoo">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-12.jpg" alt="IMG">
+			<h4 class="item_title">Kugoo M5 Lux</h4>
+			<a href="#popup_catalog_more78" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">1760</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="12">Добавить в корзину</button>
+			</div>
+		</div>
+<!-- row4 -->
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item kugoo">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-13.jpg" alt="IMG"> 	
+			<h4 class="item_title">Kugoo M4</h4>
+			<a href="#popup_catalog_more65" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">835</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="13">Добавить в корзину</button>			
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item kugoo">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-14.jpg" alt="IMG">
+			<h4 class="item_title">Kugoo G-Booster</h4>
+			<a href="#popup_catalog_more68" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">2000</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="14">Добавить в корзину</button>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item razor">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-15.jpg" alt="IMG">
+			<h4 class="item_title">Razor Power E90</h4>
+			<a href="#popup_catalog_more36" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">450</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="15">Добавить в корзину</button>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 isotope-item razor">
+			<div class="item_box block1-bg hov3 trans-04">
+			<img src="img/product-16.jpg" alt="IMG">
+			<h4 class="item_title">Razor Power E100</h4>
+			<a href="#popup_catalog_more37" class="button_more modalbox">Подробнее</a>
+			<p>Цена: <span class="item_price">598</span>&nbsp;руб.</p>
+			<button class="add_item" data-id="16">Добавить в корзину</button>
+			</div>
+		</div>		
+  </div>
+</div>
+
+
+		<section class="popup_catalog popup active sect" id="popup_catalog36">
+				<div class="content active" data-id="36">
+					<div class="left">
+						<div class="title">
+							<div class="caption"><span>ВАШ ЗАКАЗ:</span>
+								<div class="text">Электросамокат Razor Core E90 (розовый)</div>
+							</div>
+							<div class="cost">
+								450 <span>руб</span>
+							</div>
+						</div>
+						<div class="top">
+							<div class="left">
+								<div class="icons">
+									<div class="top">
+										<div class="icon">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/7/1/big/1.jpg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="icon" data-img="img/catalog/7/1/big/2.jpg">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/7/1/2.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="icon" data-img="img/catalog/7/1/big/3.jpg">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/7/1/3.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="icon" data-img="img/catalog/7/1/big/4.jpg">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/7/1/4.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="icon" data-img="img/catalog/7/1/big/1.jpg">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/7/1/1.jpg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<div class="features">
+									<div class="caption">
+										Характеристики:
+									</div>
+									<div class="items">
+										<div class="item">
+											<div class="name" style="">
+														Максимальная скорость	</div>
+													<div class="value" style="">
+														16 Км/ч			</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Пробег на одном заряде									</div>
+													<div class="value" style="">
+														20 Км													</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Вес самоката											</div>
+													<div class="value" style="">
+														9,9 Кг													</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Максимальная мощность									</div>
+													<div class="value" style="">
+														90 W													</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Ёмкость аккумулятора									</div>
+													<div class="value" style="">
+														7,0 Ah													</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Максимальная нагрузка									</div>
+													<div class="value" style="">
+														55 Кг													</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Аккумулятор													</div>
+													<div class="value" style="">
+														AGM VRLA, 12V 												</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Время зарядки аккумулятора									</div>
+													<div class="value" style="">
+														3 - 4 часа													</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Под какой рост подходит. От и до.							</div>
+													<div class="value" style="">
+														110 - 150 см												</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Размер колёс												</div>
+													<div class="value" style="">
+														5.5 дюймов													</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Шины													</div>
+													<div class="value" style="">
+														Цельнолитые 											</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Привод													</div>
+													<div class="value" style="">
+														Задний 													</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Клиренс (дорожный просвет)								</div>
+													<div class="value" style="">
+														60 мм													</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Приложение для смартфона									</div>
+													<div class="value" style="">
+														Отстутствует 												</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Страна производитель									</div>
+													<div class="value" style="">
+														Китай  													</div>
+												</div>
+															<div class="item">
+													<div class="name" style="">
+														Гарантия													</div>
+													<div class="value" style="">
+														12 месяцев													</div>
+												</div>
+																													</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form class="contact" action="zakaz.php" method="post">
+						<div class="title">ЗАПОЛНИТЕ ФОРМУ</div>
+						<div class="title_sub">
+							ЧТОБЫ ЗАКАЗАТЬ ЭЛЕКТРОСАМОКАТ <br>
+							Razor Power Core E90						</div>
+						<input type="text" name="name" placeholder="Введите ФИО">
+						<input type="text" name="phone" placeholder="Введите мобильный телефон">
+						<textarea name="address" placeholder="Введите адрес доставки (Почтовый индекс, город, улица, дом, квартира) или напишите “самовывоз” в случае покупки гироскутера в нашем Шоу-Руме "></textarea>
+						<input type="hidden" name="form_charset" value="">
+						<input type="hidden" name="tovar_id" value="370463">
+						<input type="hidden" name="form_id" value="12650">
+						<input type="hidden" name="order_page_referer" value="">
+						<input type="hidden" value="3" name="pay_mode">
+						<button class="button">
+							Оформить заказ
+						</button>
+						<div class="note">
+							или
+						</div>
+						<a class="button more" href="razor-core-e90/">
+							Узнать подробнее о данной модели
+						</a>
+						<div class="remark">
+							Ваши персональные данные не будут переданы 
+							третьим лицам.
+						</div>
+					</form>
+				</div>
+			</section>
+					<section class="popup_catalog popup active sect" id="popup_catalog37">
+				<div class="content active" data-id="37">
+					<div class="left">
+						<div class="title">
+							<div class="caption"><span>ВАШ ЗАКАЗ:</span>
+								<div class="text">Электросамокат Razor Power Core E100 (синий)</div>
+							</div>
+							<div class="cost">
+								598 <span>руб</span>
+							</div>
+						</div>
+						<div class="top">
+							<div class="left">
+								<div class="icons">
+									<div class="top">
+										<div class="icon">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/8/1/big/1.jpg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="icon" data-img="img/catalog/8/1/big/2.jpg">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/8/1/2.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="icon" data-img="img/catalog/8/1/big/3.jpg">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/8/1/3.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="icon" data-img="img/catalog/8/1/big/4.jpg">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/8/1/4.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="icon" data-img="img/catalog/8/1/big/1.jpg">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/8/1/1.jpg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<div class="features">
+									<div class="caption">
+										Характеристики:
+									</div>
+									<div class="items">
+															<div class="item">
+													<div class="name" style="">
+														Максимальная скорость									</div>
+													<div class="value" style="">
+														18 Км/ч													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Пробег на одном заряде									</div>
+													<div class="value" style="">
+														25 Км													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Вес самоката											</div>
+													<div class="value" style="">
+														11,8 Кг													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Максимальная мощность									</div>
+													<div class="value" style="">
+														100 W													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Ёмкость аккумулятора									</div>
+													<div class="value" style="">
+														10 Ah													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Максимальная нагрузка									</div>
+													<div class="value" style="">
+														55 Кг													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Аккумулятор													</div>
+													<div class="value" style="">
+														AGM VRLA, 24V 												</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Время зарядки аккумулятора									</div>
+													<div class="value" style="">
+														5 - 6 часов													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Под какой рост подходит. От и до.								</div>
+													<div class="value" style="">
+														120 - 160 см													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Размер колёс												</div>
+													<div class="value" style="">
+														8 дюймов													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Шины													</div>
+													<div class="value" style="">
+														Пневмо 													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Привод													</div>
+													<div class="value" style="">
+														Задний 													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Клиренс (дорожный просвет)								</div>
+													<div class="value" style="">
+														90 мм													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Приложение для смартфона										</div>
+													<div class="value" style="">
+														Отстутствует 													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Страна производитель									</div>
+													<div class="value" style="">
+														Китай  													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Гарантия													</div>
+													<div class="value" style="">
+														12 месяцев													</div>
+												</div>
+																													</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form class="contact" action="zakaz.php" method="post">
+						<div class="title">ЗАПОЛНИТЕ ФОРМУ</div>
+						<div class="title_sub">
+							ЧТОБЫ ЗАКАЗАТЬ ЭЛЕКТРОСАМОКАТ <br>
+							Razor Power Core E100						</div>
+						<input type="text" name="name" placeholder="Введите ФИО">
+						<input type="text" name="phone" placeholder="Введите мобильный телефон">
+						<textarea name="address" placeholder="Введите адрес доставки (Почтовый индекс, город, улица, дом, квартира) или напишите “самовывоз” в случае покупки гироскутера в нашем Шоу-Руме "></textarea>
+						<input type="hidden" name="form_charset" value="">
+						<input type="hidden" name="tovar_id" value="370467">
+						<input type="hidden" name="form_id" value="12650">
+						<input type="hidden" name="order_page_referer" value="">
+						<input type="hidden" value="3" name="pay_mode">
+						<button class="button">
+							Оформить заказ
+						</button>
+						<div class="note">
+							или
+						</div>
+						<a class="button more" href="razor-core-e100/">
+							Узнать подробнее о данной модели
+						</a>
+						<div class="remark">
+							Ваши персональные данные не будут переданы 
+							третьим лицам.
+						</div>
+					</form>
+				</div>
+			</section>
+					<section class="popup_catalog popup active sect" id="popup_catalog35">
+				<div class="content active" data-id="35">
+					<div class="left">
+						<div class="title">
+							<div class="caption"><span>ВАШ ЗАКАЗ:</span>
+								<div class="text">Электросамокат LeEco Scooter Viper-A (черный)</div>
+							</div>
+							<div class="cost">
+								649 <span>руб</span>
+							</div>
+						</div>
+						<div class="top">
+							<div class="left">
+								<div class="icons">
+									<div class="top">
+										<div class="icon">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/6/1/big/1.jpg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="icon" data-img="img/catalog/6/1/big/2.jpg">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/6/1/2.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="icon" data-img="img/catalog/6/1/big/3.jpg">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/6/1/3.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="icon" data-img="img/catalog/6/1/big/4.jpg">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/6/1/4.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="icon" data-img="img/catalog/6/1/big/1.jpg">
+											<div class="table">
+												<div class="cell">
+													<img src="img/catalog/6/1/1.jpg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<div class="features">
+									<div class="caption">
+										Характеристики:
+									</div>
+									<div class="items">
+														<div class="item">
+													<div class="name" style="">
+														Максимальная скорость													</div>
+													<div class="value" style="">
+														25 Км/ч													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Пробег на одном заряде													</div>
+													<div class="value" style="">
+														20 Км													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Вес самоката													</div>
+													<div class="value" style="">
+														8,9 Кг													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Максимальная мощность													</div>
+													<div class="value" style="">
+														250 W													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Ёмкость аккумулятора													</div>
+													<div class="value" style="">
+														6,6 Ah													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Максимальная нагрузка									</div>
+													<div class="value" style="">
+														100 Кг													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Аккумулятор											</div>
+													<div class="value" style="">
+														Li-ion, 36V 										</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Время зарядки аккумулятора								</div>
+													<div class="value" style="">
+														3 - 4 часа												</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Под какой рост подходит. От и до.													</div>
+													<div class="value" style="">
+														140 - 200 см											</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Размер колёс											</div>
+													<div class="value" style="">
+														5.5 дюймов												</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Шины													</div>
+													<div class="value" style="">
+														Цельнолитые 											</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Привод													</div>
+													<div class="value" style="">
+														Передний 												</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Клиренс (дорожный просвет)								</div>
+													<div class="value" style="">
+														57 мм													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Приложение для смартфона								</div>
+													<div class="value" style="">
+														Отстутствует 											</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Страна производитель									</div>
+													<div class="value" style="">
+														Китай  													</div>
+												</div>
+														<div class="item">
+													<div class="name" style="">
+														Гарантия												</div>
+													<div class="value" style="">
+														12 месяцев												</div>
+												</div>
+														</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form class="contact" action="zakaz.php" method="post">
+						<div class="title">ЗАПОЛНИТЕ ФОРМУ</div>
+						<div class="title_sub">
+							ЧТОБЫ ЗАКАЗАТЬ ЭЛЕКТРОСАМОКАТ <br>
+							LeEco Scooter Viper-A						</div>
+						<input type="text" name="name" placeholder="Введите ФИО">
+						<input type="text" name="phone" placeholder="Введите мобильный телефон">
+						<textarea name="address" placeholder="Введите адрес доставки (Почтовый индекс, город, улица, дом, квартира) или напишите “самовывоз” в случае покупки гироскутера в нашем Шоу-Руме "></textarea>
+						<input type="hidden" name="form_charset" value="">
+						<input type="hidden" name="tovar_id" value="370462">
+						<input type="hidden" name="form_id" value="12650">
+						<input type="hidden" name="order_page_referer" value="">
+						<input type="hidden" value="3" name="pay_mode">
+						<button class="button">
+							Оформить заказ
+						</button>
+						<div class="note">
+							
+						</div>
+						
+						<div class="remark">
+							Ваши персональные данные не будут переданы 
+							третьим лицам.
+						</div>
+					</form>
+				</div>
+			</section>
+		
+					<section class="popup_catalog_more popup sect" id="popup_catalog_more32">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="32">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/10/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/10/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/10/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/10/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/10/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/10/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/10/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/10/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/10/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Ninebot by Segway ES4</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Аккумулятор с напряжением 36V и ёмкостью 5200 mAh, расположенный в руле + идущий в комплекте дополнитель- ный аккумулятор, дают возможность проехать на одном заряде до 35 километров.</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">30</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">35</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">14,1</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">800</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">10,4</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">100</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка</div>
+													</div>
+												</div>
+												<div class="colors">
+															</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																					<div class="old">
+															39 990 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода -36951 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">36990</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more45">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="45">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/9/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/9/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/9/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/9/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/9/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/9/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/9/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/9/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/9/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Kugoo M3 Pro 500W 11Ah								</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Этой модели под силу не только ровные дороги, на нём ездить и по пересечённой местности. Это возможно благодаря поглощающим тряску амортизаторам, установленным по 2шт на каждое 10-дюймовое колесо.</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">35</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">35</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде										</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">18,1</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката										</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">500</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность							</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">11</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора							</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка						</div>
+													</div>
+												</div>
+												<div class="colors">
+																									</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																				<div class="old">
+															29990 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 6000 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">23990</span> РУБ.
+														</div>
+																				</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more46">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="46">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/11/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/11/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/11/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/11/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/11/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/11/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/11/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/11/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/11/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Halten 1200W 26Ah					</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Мощный и быстрый электросамокат Halten 1200W обычно выбирают любители скоростных и дальних поездок. Максимальная мощность двигателя 1200 Ватт, позволяет за секунды разгоняться до максимальной скорости, а его вес и ширина деки обеспечивают должный комфорт при езде.	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">55</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">70</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде						</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">24,9</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката			</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">1200</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность							</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">26</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора					</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка						</div>
+													</div>
+												</div>
+												<div class="colors">
+																						</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																<div class="old">
+															2090 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 300 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">1760</span> РУБ.
+														</div>
+																	</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more48">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="48">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/7/2/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/7/2/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/7/2/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/7/2/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/7/2/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/7/2/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/7/2/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/7/2/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/7/2/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Razor Power Core E90					</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+																						</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">16</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">20</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде						</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">9,9</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката					</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">90</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность			</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">7,0</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора			</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">55</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка				</div>
+													</div>
+												</div>
+												<div class="colors">
+																					</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																			<div class="old">
+															550 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 100 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">450</span> РУБ.
+														</div>
+																			</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more49">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="49">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/4/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/4/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/4/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/4/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Xiaomi Mijia Scooter M365 EU											</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+																						</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">25</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">30</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде					</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">12,5</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">500</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность										</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">7,8</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора										</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">100</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка										</div>
+													</div>
+												</div>
+												<div class="colors">
+																					</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																	<div class="old">
+															999 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">799</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more50">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="50">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/8/2/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/8/2/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/8/2/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/8/2/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/8/2/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/8/2/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/8/2/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/8/2/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/8/2/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Razor Power Core E100								</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Достаточно просто оттолкнуться ногой и пуститься в путь! Остальное сделает тихий электромотор-колесо, благодаря эффективной работе и повышенной производительности. Максимальная скорость, которая ограничена, равна 18 км/ч.	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">18</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">25</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде									</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">11,8</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">100</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность										</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">10</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора									</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">55</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка				</div>
+													</div>
+												</div>
+												<div class="colors">
+																							</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																	<div class="old">
+															798 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">598</span> РУБ.
+														</div>
+																							</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more31">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="31">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/1/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/1/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/1/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/1/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/1/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/1/1/big/3.jpg1">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/1/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/1/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/1/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Kugoo S3 JILONG 6.6Ah					</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													По сравнению со своим предшественником, Kugoo S3 обладает более мощными техническими характеристиками, что значительно отразилось на повышении спроса на данный самокат.</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">30</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">30</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде			</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">11,7</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката		</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">350</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность			</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">6,6</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора			</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка		</div>
+													</div>
+												</div>
+												<div class="colors">
+																							</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																				<div class="old">
+															673 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">460</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more59">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="59">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/59/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/59/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/59/s1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/59/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/59/s2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/59/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/59/s3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/59/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/59/s4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Kugoo S3 PRO 7.8 Ah						</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Электросамокат Kugoo S3 Pro. Долгожданная новинка от компании Kugoo, производителя качественных и не дорогих электросамокатов для города. Обновлённый дизайн Kugoo S3 Pro никого не оставит равнодушным. </div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">35</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">30</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде									</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">12</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">350</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность										</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">7,8</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора		</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка									</div>
+													</div>
+												</div>
+												<div class="colors">
+																					</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																					<div class="old">
+															835 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">625</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more76">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="76">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/9/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/9/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/9/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/9/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/9/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/9/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/9/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/9/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/9/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Kugoo M2 350W 10.4Ah		</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Этой модели под силу не только ровные дороги, на нём ездить и по пересечённой местности. Это возможно благодаря поглощающим тряску амортизаторам, установленным по 2шт на каждое 10-дюймовое колесо.	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">35</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">30</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде										</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">16</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">350</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность										</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">10.4</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора										</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка									</div>
+													</div>
+												</div>
+												<div class="colors">
+																					</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																					<div class="old">
+															919 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">680</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more60">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="60">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/60/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/60/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/60/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/60/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/60/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/60/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/60/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/60/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/60/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Kugoo Max Speed 13Ah	</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Модернизированная версия электросамоката с сиденьем теперь и с влагозащитой. Ее металлическая дека со всех сторон защищена от попадания влаги! Нельзя также не отметить обновленный дизайн электросамоката. 	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">45</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">40</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">23</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">500</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">13</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка												</div>
+													</div>
+												</div>
+												<div class="colors">
+																						</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																			<div class="old">
+															1247 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 300 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">930</span> РУБ.
+														</div>
+																							</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more19">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="19">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/2/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/2/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/2/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/2/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/2/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/2/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/2/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/2/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/2/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Ninebot by Segway ES2						</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Электросамокат NineBot by Segway ES2 &ndash; идеальный вариант для небольшого бездорожья и преодоления автомобильных пробок. Устройство предназначено для путешествия на средние расстояния, полного заряда батареи хватит на 20 км.</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">25</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">20</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">12,5</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката													</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">600</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">5,2</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">100</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка											</div>
+													</div>
+												</div>
+												<div class="colors">
+																							</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																							<div class="old">
+															960 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">720</span> РУБ.
+														</div>
+																								</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more79">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="79">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/2/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/4/2/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/2/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/4/2/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/2/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/4/2/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/2/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/4/2/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/2/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Xiaomi Mijia M365 CN							</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Китайская версия складного электросамоката Xiaomi нового поколения (Бывает еще ЕВРО версия). Корпус из авиационного алюминия, потрясающий дизайн и интеллектуальная система рекуперации энергии. Без дополнительных колес в комплекте.</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">25</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">30</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">12,5</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">500</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">7,8</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">100</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка											</div>
+													</div>
+												</div>
+												<div class="colors">
+																									</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																		<div class="old">
+															999 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">799</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more20">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="20">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/2/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/4/2/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/2/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/4/2/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/2/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/4/2/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/2/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/4/2/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/4/2/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Xiaomi Mijia M365 EU							</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Глобальная версия складного электросамоката Xiaomi нового поколения. Корпус из авиационного алюминия, потрясающий дизайн и интеллектуальная система рекуперации энергии. Укомплектован дополнительными колесами в кол-ве 2штук (покрышки и камеры)</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">25</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">30</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">12,5</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката													</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">500</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">7,8</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">100</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка											</div>
+													</div>
+												</div>
+												<div class="colors">
+																							</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																									<div class="old">
+															999 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">799</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more61">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="61">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/61/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/61/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/61/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/61/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/61/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/61/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/61/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/61/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/61/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Xiaomi Mijia M365 Pro							</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Новинка 2019 года от компании Xiaomi Что изменилось? 1) Пробег вырос до 45км 2) Батарея 12,8 Ач, вместо 7,8 Ач 3) Информационный дисплей, он же бортовой компьютер  4) Мотор стал мощнее, вместо 250Вт, теперь 300Вт	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">25</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">45</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">14,2</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">600</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">12,8</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">110</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка											</div>
+													</div>
+												</div>
+												<div class="colors">
+																						</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																	<div class="old">
+															1490 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">1290</span> РУБ.
+														</div>
+																				</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more62">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="62">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/62/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/62/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/62/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/62/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/62/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/62/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/62/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/62/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/62/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Halten RS-01 500W 15Ah											</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Главными достоинствами электросамоката Halten RS-01 становятся характеристики. Двигатель на 500 Вт и АКБ на 15 Ач, обеспечивают максимальную скорость 40 км/ч и запас хода на 35 км.	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">40</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">35</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">16,1</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">500</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">15</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка												</div>
+													</div>
+												</div>
+												<div class="colors">
+																						</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																					<div class="old">
+															1450 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">1250</span> РУБ.
+														</div>
+																				</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more63">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="63">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/63/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/63/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/63/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/63/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/63/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/63/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/63/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/63/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/63/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат				
+											</div>
+											<div class="caption">
+												Halten RS-02 1200W 24Ah					</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Модернизирован основатель и первооткрыватель компании Halten, мощный 1200w мотор и 24а 48v аккумулятор способные проехать больше 60 км. пути. Он стал еще легче, при чем на целые 3 кг. 	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">55</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">60</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">27</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">1200</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">24</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">150</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка												</div>
+													</div>
+												</div>
+												<div class="colors">
+																					</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																				<div class="old">
+															2100 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 300 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">1800</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more64">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="64">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/64/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/64/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/64/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/64/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/64/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/64/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/64/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/64/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/64/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Halten RS-03 2400W 24Ah											</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Полноприводный электросамокат мощность на каждое мотор колесо равняется 1200w, что в сумме дает 2400w, аккумулятор 60V 24Ah который позволяет на полной зарядке проехать дистанцию более 60 км пути.	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">65</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">60</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">36</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">2400</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">24</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">150</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка												</div>
+													</div>
+												</div>
+												<div class="colors">
+																					</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																						<div class="old">
+															3150 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 300 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">2850</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more78">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="78">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/78/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/78/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/78/s1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/78/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/78/s2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/78/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/78/s3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/78/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/78/s4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Kugoo M5 Lux1200W 26Ah									</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Kugoo M5 качественный электросамокат с отличными потребительскими характеристиками, позволяет совершать длительные и увлекательные прогулки &ndash; его электродвигатель мощностью 1200 Вт обеспечивают быстрый набор скорости, а качественный и емкий литий-ионный аккумулятор дает вам преодолеть до 70 км на одном заряде	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">55</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">70</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">24,9</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">1200</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">26</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка												</div>
+													</div>
+												</div>
+												<div class="colors">
+																						</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																						<div class="old">
+															2090 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 300 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">1760</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more65">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="65">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/65/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/65/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/65/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/65/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Kugoo M4 500W 11Ah					</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Сиденье, которым оборудован Kugoo M4 позволяет ездить на дальние расстояния - мягкие амортизаторы, регулируемые по высоте, обеспечат поездку максимальным комфортом и плавностью. Самокат имеет два тормоза на каждом колесе. 	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">40</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">30</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">18,1</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">500</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">11</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка												</div>
+													</div>
+												</div>
+												<div class="colors">
+																					</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																			<div class="old">
+															1060 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">835</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more66">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="66">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/65/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/65/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/65/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/65/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Kugoo M4 500W 15Ah				</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Электросамокат Kugoo M4 обладает улучшенными характеристиками и качественной сборкой, а так же некоторыми усовершенствованиями, по сравнению с предыдущими версиями. 	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">40</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">40</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">20,1</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката													</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">500</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">15</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка											</div>
+													</div>
+												</div>
+												<div class="colors">
+																				</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																				<div class="old">
+															1060 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">835</span> РУБ.
+														</div>
+																		</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more77">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="77">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/65/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/65/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/65/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/65/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Kugoo M4 PRO 500W 13Ah					</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Встречайте обновлённую модель электросамоката Kugoo M4. Более комфортное сиденье непременно зацепит внимание, ведь для вашего удобства оно продумано в мельчайших деталях. Самокат оборудован мощным мотором в 500Вт, а емкость аккумулятора увеличилась до 13 Ah	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">40</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">40</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">19,2</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката													</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">500</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">13</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка											</div>
+													</div>
+												</div>
+												<div class="colors">
+																									</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																		<div class="old">
+															1100 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">900</span> РУБ.
+														</div>
+																					</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more67">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="67">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/65/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/65/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/65/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/65/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/65/s4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Kugoo M4 PRO 500W 17Ah				</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Перед Вами новый гибрид - электросамокат Kugoo M4 Pro. Абсолютное совершенство в каждой детали, на этот раз разработчики сделали все возможное для достижения идеального самоката. Быстрый и стремительный разгон транспорта будет достигаться за счет мощного мотор колеса в 500W. Емкость АКБ в этой версии стала еще выше - 16Ah			</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">45</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">50</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">20,8</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">500</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">16.6</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка											</div>
+													</div>
+												</div>
+												<div class="colors">
+																				</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																											<div class="old">
+															1200 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 180 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">1020</span> РУБ.
+														</div>
+																				</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more68">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="68">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/68/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/68/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/68/s1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/68/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/68/s2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/68/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/68/s3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/68/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/68/s4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Kugoo G-Booster 2400W 23Ah				</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Самый большой в своем роде электрический самокат Kugoo G-Booster не оставит равнодушным ценителей скорости, рева мотора и диномичной езды. Агрегат можно стравнить с внедорожником, благодаря его высокой подвеске и повышенной проходимости по неровной поверхности. 		</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">50</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">60</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">24,9</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">2400</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">23</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора											</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка											</div>
+													</div>
+												</div>
+												<div class="colors">
+																		</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																		<div class="old">
+															2300 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 300 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">2000</span> РУБ.
+														</div>
+																		</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more34">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="34">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/5/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/5/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/5/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/5/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/5/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/5/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/5/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/5/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/5/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Speedway Mini 4 Pro 13Ah					</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Электросамокат Speedway Mini 4 Pro от завода Minimotors, это один из самых продаваемых и востребованных самокатов в России. Максимальная нагрузка электросамоката 120 килограмм при собственном весе в 16 килограмм.	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">45</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">40</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">16,4</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">500</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">13</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка												</div>
+													</div>
+												</div>
+												<div class="colors">
+																						</div>
+											</div>
+											<div class="bottom">
+												<a id="tovar_34" href="#popup_catalog34" class="button modalbox">ОФОРМИТЬ ЗАКАЗ</a>
+												
+												<div class="cost">
+																	<div class="old">
+															2723 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 300 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">2423</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more47">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="47">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/12/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/12/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/12/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/12/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/12/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/12/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/12/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/12/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/12/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Dualtron Raptor 1600W 18Ah											</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Dualtron Raptor это самый мощный серийный электросамокат в мире с размером колес 8 дюймов. Суммарная мощность 2-х двигателей 1600 Ватт, что в 4,5 раза больше чем у среднего 8 дюймового самоката.		</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">65</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">60</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">25,4</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">1600</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">18,2</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">120</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка												</div>
+													</div>
+												</div>
+												<div class="colors">
+																						</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																				<div class="old">
+															3295 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 300 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">2995</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more33">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="33">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/3/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/3/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/3/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/3/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/3/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/3/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/3/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/3/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/3/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Jack Hot 250W 4.4 Ah											</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Благодаря двигателю мощностью 250W электросамокат Jack Hot способен развивать скорость до 25 км/ч. Для зарядки устройства потребуется всего 4 часа, при этом дальность хода составляет 30 км.		</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">20</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">16</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">7,8</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">250</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">4,4</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">70</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка													</div>
+													</div>
+												</div>
+												<div class="colors">
+																						</div>
+											</div>
+											<div class="bottom">
+												
+																	<div class="old">
+															799 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">599</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more36">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="36">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/7/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/7/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/7/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/7/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/7/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/7/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/7/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/7/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/7/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Razor Power Core E90				</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Электросамокат Razor Core E90 покупают детям в возрасте от 5 лет, ростом от 100 до 160 см., и весом до 55 килограмм. Вес самоката чуть не дотягивает до 10 килограмм, что позволяет ребенку переносить его самостоятельно.	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">16</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">20</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">9,9</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">90</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">7,0</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">55</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка												</div>
+													</div>
+												</div>
+												<div class="colors">
+																						</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																						<div class="old">
+															550 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 100 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">450</span> РУБ.
+														</div>
+																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more37">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="37">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/8/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/8/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/8/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/8/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/8/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/8/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/8/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/8/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/8/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+											</div>
+											<div class="caption">
+												Razor Power Core E100			</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Достаточно просто оттолкнуться ногой и пуститься в путь! Остальное сделает тихий электромотор-колесо, благодаря эффективной работе и повышенной производительности. Максимальная скорость, которая ограничена, равна 18 км/ч.	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">18</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">25</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">11,8</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">100</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">10</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">55</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка											</div>
+													</div>
+												</div>
+												<div class="colors">
+																						</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																						<div class="old">
+															798 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">598</span> РУБ.
+														</div>
+															</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+			<section class="popup_catalog_more popup sect" id="popup_catalog_more35">
+			<div class="group">
+								<div class="card">
+									<div class="left">
+										<div class="icons active" data-id="35">
+												<div class="top">
+													<div class="icon">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/6/1/big/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="icon" data-img="img/catalog/6/1/big/1.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/6/1/1.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/6/1/big/2.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/6/1/2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/6/1/big/3.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/6/1/3.jpg" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="icon" data-img="img/catalog/6/1/big/4.jpg">
+														<div class="table">
+															<div class="cell">
+																<img src="img/catalog/6/1/4.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													
+																																																					
+									</div>
+									<div class="right">
+										<div class="text">
+											<div class="category">
+												электросамокат
+																									
+											</div>
+											<div class="caption">
+												LeEco Scooter Viper-A		</div>
+											<div class="features">
+												<div class="caption">
+													<span class="value">Характеристики</span>
+												</div>
+												<div class="desc">
+													Лёгкий электрический самокат со складной рамой, относящийся к новому поколению облегченных электросамокатов, аккумуляторы и вся электрическая часть которых расположены в рулевой стойке.	</div>
+												<div class="subitems">
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">25</span> Км/ч														
+														</div>
+														<div class="desc">
+															Максимальная скорость<br>самоката
+														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">20</span> Км														
+														</div>
+														<div class="desc">
+															Пробег на одном заряде												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">8,9</span> Кг														
+														</div>
+														<div class="desc">
+															Вес самоката														</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">250</span> W														
+														</div>
+														<div class="desc">
+															Максимальная мощность												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">6,6</span> Ah														
+														</div>
+														<div class="desc">
+															Ёмкость аккумулятора												</div>
+													</div>
+													<div class="subitem">
+														<div class="caption">
+															<span class="digit">100</span> Кг														
+														</div>
+														<div class="desc">
+															Максимальная нагрузка												</div>
+													</div>
+												</div>
+												<div class="colors">
+																	</div>
+											</div>
+											<div class="bottom">
+												
+												
+												<div class="cost">
+																<div class="old">
+															849 <span class="rub">руб.</span>
+														</div>
+														<div class="sale">
+															Выгода 200 <span class="rub">РУБ.</span>
+														</div>
+														<div class="new">
+															<span class="digit">649</span> РУБ.
+														</div>
+														</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</section>
+<script src="libs/fancybox/jquery.fancybox.js"></script>
+<script src="js/common.js"></script>
+
+<script src="js/animsition.min.js"></script>
+<!--=======================================================================-->
+<script src="js/isotope.pkgd.min.js"></script>
+
+<script src="js/main1.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
