@@ -106,39 +106,4 @@ $(document).ready(function() {
 		return false
 	});
 });
-(function($) {
-	$('.popup .close').on('click',function () {
-		$.fancybox.close();
-	});
-	$(function() {
-		if (!$.cookie('popup_subscription')) {
-			var popup_subscription_show = false;
-			var page_show = false;
-			setTimeout(pageShowTrue, 120000);
-			function pageShowTrue() {
-				page_show = true;
-			};
-			function getWindow(){
-				popup_subscription_show = true;
-				$.fancybox([{ 
-					href : '#popup_subscription',
-					closeBtn:true,
-					scrolling:'visible',
-					fitToView: false,
-					padding: 0,
-					margin: [0,40,0,0],
-					modal: true
-				}]);
-				$.cookie('popup_subscription', true, {
-					expires: 1,
-					path: '/'
-				});
-			};
-			$('html').mouseleave(function (e) { 
-				if ((e.clientY < 0) && (popup_subscription_show == false) && (page_show == false)) {
-					getWindow();
-				} 
-			});
-		}
-	})
-})(jQuery)
+(jQuery)

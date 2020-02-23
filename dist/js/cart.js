@@ -77,3 +77,12 @@ addEvent(d.getElementById('clear_cart'), 'click', function(e){
 	localStorage.removeItem('cart');
 	cartCont.innerHTML = 'Корзина очишена.';	
 });
+
+/* Плавная прокрутка к якорю */
+$("a.content-link").on("click", function(e){
+    e.preventDefault();
+    var anchor = $(this).attr('href');
+    $('html, body').stop().animate({
+        scrollTop: $(anchor).offset().top - 70
+    }, 800);
+});
