@@ -17,5 +17,5 @@ if(isset($_POST['message']) && !empty($_POST['message'])) {$message = $_POST['me
  $email="admin@$domain"; // от кого
  $send = mail ($address,$sub,$mes,"Content-type:text/plain; charset = utf-8\r\nFrom:$email"); 
  ini_set('short_open_tag', 'On'); 
- header('Location: http://texnocity.by/success.html');
+ header('Location: success.html');
 ?>
