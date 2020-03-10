@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$(".modalbox").fancybox({
 		closeBtn:true,
 		scrolling:'visible',
-		fitToView: false,
+		fitToView: true,
 		padding: 0,
 		margin: [0,40,0,0],
 	});

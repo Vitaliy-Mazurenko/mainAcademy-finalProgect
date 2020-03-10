@@ -65,7 +65,6 @@
 }
 body {
   position: relative;
-  min-width: 320px;
   text-align: center;
   font-family: 'PFDinTextCondPro', Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -279,8 +278,11 @@ textarea.error::-ms-input-placeholder {
   -ms-box-shadow: 0 0px 7px 0px rgba(0,0,0,0.1);
 
   @media (max-width: 575px) {  
-    right: 10px;  
-}
+    width: 315px;
+ }
+ @media (max-width: 375px) {  
+  width: 295px;
+ }
 }
 .trans-04 {
   -webkit-transition: all 0.4s;
@@ -357,6 +359,9 @@ textarea.error::-ms-input-placeholder {
   height: 100%;
   top: 0;
   right: 15px;
+  @media (max-width: 576px) {
+    right: 5px;
+  }
 }
 
 /*==================================================================
@@ -487,6 +492,9 @@ textarea.error::-ms-input-placeholder {
    @media (max-width: 576px) {
    font-size: 32px;
    }
+   @media (max-width: 375px) {
+    font-size: 26px;
+    }
    }
    & .desc {
    display: flex;
@@ -533,7 +541,10 @@ textarea.error::-ms-input-placeholder {
   @media (max-width: 576px) {
   font-size: 30px;
   max-width: 345px;
-  }   
+  }
+  @media (max-width: 375px) {
+    max-width: 305px;
+    } 
   }
   & > .top .note {
   font-size: 63px;
@@ -1265,6 +1276,11 @@ padding-left: 10px;
 @media (max-width: 768px) {
   .testdrive.sect .intro .caption {
   font-size: 50px;
+  } 
+}
+@media (max-width: 375px) {
+  .testdrive.sect .intro .caption {
+  font-size: 40px;
   }
 }
 .guarantee.sect .items {
@@ -1326,11 +1342,13 @@ padding-left: 10px;
 
 .contacts .content {
   position: relative;
- 
   width: 430px;
   background-color: #fff;
   padding: 20px 30px;
   z-index: 2;
+@media (max-width: 375px) {
+  padding: 20px 5px;
+}
 }
 .contacts .content > .top {
   margin-bottom: 20px;
@@ -1807,6 +1825,9 @@ text-align: left;
 .catalog.sect > .container .intro .caption {
   font-size: 36px;
   font-weight: 500;
+@media (max-width: 576px) {
+    font-size: 30px;
+}
 }
 .catalog.sect > .container .intro .desc {
   font-size: 24px;
@@ -1993,7 +2014,7 @@ text-align: left;
 .catalog.sect > .groups > .container .content > .group .card > .left,
 .popup_catalog_more > .group .card > .left {
   width: 440px;
-  margin-right: 50px;
+  padding-right: 50px;
 }
 .catalog.sect > .groups > .container .content > .group .card > .left .icons,
 .popup_catalog_more > .group .card > .left .icons {
@@ -2097,6 +2118,9 @@ text-align: left;
   font-size: 48px;
   font-weight: 300;
   color: #f99f1c;
+  @media (max-width: 767px) {
+    font-size: 42px;
+  }
 }
 .catalog.sect > .groups > .container .content > .group .card > .right > .text .features,
 .popup_catalog_more > .group .card > .right > .text .features {

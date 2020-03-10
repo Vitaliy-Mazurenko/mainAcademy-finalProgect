@@ -12,20 +12,37 @@
 	<link rel="shortcut icon" href="img/icons/favicon.ico" />
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
 	<style>
-		body {
-		text-align: center;
-		line-height: 1.2;
-		font-size: 1.6em;
-		}
+		* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+	text-align: center;
+		line-height: 1.4;
+		font-size: 15px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
 		a {
 		color: inherit;
 		}
 		.phone{
 		padding-bottom: 10px;
 		}
-		.wrapper {
-		padding-top: 23vh;
-		padding-bottom: 30px;
+		.thanks_header {
+		padding-top: 17vh;
 		}
 		.items {
 		padding-top: 20px;
@@ -37,13 +54,16 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 		}
-		</style>
+	</style>
 </head>
 <body>
-		<header class="thanks_header sect">
-			<div class="wrapper">
+	<div class="wrapper">
+		<div class="content">
+			<header class="thanks_header"></header>
 				<div class="logo">
+					<a href="index.html">
 					<img src="img/thanks_header/logo.png" alt="">
+				</a>
 				</div>
 				<div class="info">
 					<div class="phone">
@@ -53,9 +73,7 @@
 						с 09:00 - 21:00 
 					</div>
 				</div>
-			</div>
-		</header>
-		<section class="thanks_main sect">
+		<main class="thanks_main">
 			<div class="container">
 				<div class="title">
 					<h1>
@@ -85,13 +103,14 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<footer class="thanks_footer sect">
+		</main>
+	</div>
+		<footer class="thanks_footer">
 				<div class="copyright">
 					texnocity.by&nbsp;&nbsp;2016-2020 г. Все права защищены.
 				</div>
 		</footer>
-
+	</div>
 </body>
 
 
