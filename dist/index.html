@@ -7,6 +7,7 @@
 <title>Электросамокаты купить в Минске</title>
 <link rel="shortcut icon" href="img/icons/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"> 
+<link rel="stylesheet" type="text/css" href="css/hamburgers.min.css">
 <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css"/>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <script src="libs/jquery/jquery-2.1.3.min.js"></script>
@@ -53,8 +54,7 @@
 						
 					<div class="right-header">
 					
-					    	<div class="wrap-icon-header flex-w flex-r-m h-full wrap-menu-click p-t-8">
-							
+						<div class="wrap-icon-header flex-w flex-r-m h-full wrap-menu-click p-t-8">
 								
 							<div  id="checkout" class="wrap-cart-header h-full flex-m m-l-10 menu-click">
 								<div  class="icon-header-item trans-04 icon-header-noti" data-notify="1">
@@ -85,7 +85,7 @@
 							Адрес доставки </div>
 						<input type="text" name="name" placeholder="Введите ФИО">
 						<input type="text" name="phone" placeholder="Введите мобильный телефон">
-						<textarea name="address" placeholder="Введите адрес доставки (Почтовый индекс, город, улица, дом, квартира) или напишите “самовывоз” в случае покупки гироскутера в нашем Шоу-Руме "></textarea>
+						<textarea name="address" placeholder="Введите адрес доставки (Почтовый индекс, город, улица, дом, квартира) или напишите “самовывоз” в случае покупки в нашем Шоу-Руме "></textarea>
 						<input type="hidden" name="form_charset" value="">
 						<input type="hidden" name="tovar_id" value="370456">
 						<input type="hidden" name="form_id" value="12650">
@@ -99,12 +99,94 @@
 								</div>
 							</div>
 						</div>
-             
-						<!-- Icon header -->
-
 					</div>
 				</nav>
 			</div>	
+		</div>
+
+		<!-- Header Mobile -->
+		<div class="wrap-header-mobile">
+			<!-- Logo moblie -->		
+			<div class="logo-mobile">
+				<a href="index.html"><img src="img/icons/logo-01.png" alt="IMG-LOGO"></a>
+			</div>
+
+			<!-- Icon header -->
+			<div class="wrap-icon-header flex-w flex-r-m h-full wrap-menu-click m-r-15">
+				<!-- CART Header Mobile -->
+
+				<div class="wrap-cart-header h-full flex-m m-l-5 menu-click">
+					<div class="icon-header-item trans-04 icon-header-noti" data-notify="1">
+						<img src="img/icons/icon-cart-2.png" alt="CART">
+					</div>						
+						<!-- cart header item -->
+
+						<div class="cart-header menu-click-child trans-04">
+							<div id="cart_content"></div>	
+								<button id="clear_cart" class="button">Очистить корзину</button>	
+								<div class="bo-b-1 bocl15">
+									<div class="size-h-2 js-pscroll m-r--15 p-r-15">
+											<!-- cart header item -->
+
+									</div>
+								</div>
+										
+
+									<div class="flex-w flex-sb-m p-t-22 p-b-12">
+
+									</div>
+
+									<div class="flex-w flex-sb-m p-b-31">
+
+									</div>
+									
+									<form class="contact" action="zakaz.php" method="post">
+						<div class="title"></div>
+						<div class="title_sub">
+							Адрес доставки </div>
+						<input type="text" name="name" placeholder="Введите ФИО">
+						<input type="text" name="phone" placeholder="Введите мобильный телефон">
+						<textarea name="address" placeholder="Введите адрес доставки (Почтовый индекс, город, улица, дом, квартира) или напишите “самовывоз” в случае покупки в нашем Шоу-Руме "></textarea>
+						<input type="hidden" name="form_charset" value="">
+						<input type="hidden" name="tovar_id" value="370456">
+						<input type="hidden" name="form_id" value="12650">
+						<input type="hidden" name="order_page_referer" value="">
+						<input type="hidden" value="3" name="pay_mode">
+						<button class="button">
+							Оформить заказ
+						</button>
+					</form>													
+				</div>						
+				</div>
+			</div>
+			<!-- Button show menu -->
+			<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</div>
+		</div>
+
+		<!-- Menu Mobile -->
+		<div class="menu-mobile">
+			<ul class="main-menu-m">
+				<li>
+					<a href="index.html">Главная</a>
+				</li>
+
+				<li>
+					<a href="usloviya_dostavki.html">Доставка</a>
+				</li>
+
+				<li>
+					<a href="sposobi_oplati.html">Оплата</a>
+				</li>
+
+				<li>
+					<a class="content-link" href="#contacts">Контакты</a>
+				</li>
+
+			</ul>
 		</div>
 	</header>
 <main>
@@ -138,11 +220,10 @@
 			<div class="container-fluid">
 				<div class="content">
 					<div class="items">
-					
-						
+											
 						<div class="item">
 							<div class="icon">
-								<img src="img/advantages2/21.png" alt="" width="274" height="211">
+								<img src="img/advantages2/21.png" alt="">
 							</div>
 							<div class="text">
 								<div class="caption">
@@ -153,7 +234,7 @@
 						</div>
 						<div class="item">
 							<div class="icon">
-								<img src="img/advantages2/31.png" alt="" width="202" height="216">
+								<img src="img/advantages2/31.png" alt="">
 							</div>
 							<div class="text">
 								<div class="caption">
@@ -164,7 +245,7 @@
 						</div>
 						<div class="item">
 							<div class="icon">
-								<img src="img/advantages2/41.png" alt="" width="214" height="255">
+								<img src="img/advantages2/41.png" alt="">
 							</div>
 							<div class="text">
 								<div class="caption">
@@ -391,7 +472,7 @@
 					</div>
 					<div class="test-zakaz">
 						<form action="zakaz.php" method="post">
-							<input type="text" name="phone" placeholder="Введите Ваш телефон ">
+							<input type="text" name="phone" placeholder="Введите телефон ">
 							<input type="hidden" name="form_charset" value="">
 							<input type="hidden" name="tovar_id" value="370640">
 							<input type="hidden" name="form_id" value="12650">
